@@ -1,0 +1,324 @@
+/*-----------------------------------------------------------
+   Testimonials
+----------------------------------------------------------*/
+
+.testimonial {
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 100%;
+
+  .testimonial-msg {
+    display: block;
+  }
+  .testimonial-user {
+    .testimonial-img {
+      float: left;
+      width: 50px;
+      height: 50px;
+      margin: 15px 0;
+      background-color: #eeeeee;
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
+  .testimonial-info {
+    .name {
+      margin-bottom: 5px;
+    }
+    .position {
+      margin-bottom: 10px;
+    }
+    display: inline-block;
+    float: left;
+    padding-left: 15px;
+  }
+}
+.testi-actions {
+  margin: 15px 0;
+  display: inline-block;
+  width: 100%;
+  .btn:hover {
+    text-decoration: underline;
+  }
+}
+
+/*FAQ*/
+.faq-info {
+  .btn:hover {
+    text-decoration: underline;
+  }
+}
+
+/*Card Data*/
+.col-data {
+  .card {
+    margin-bottom: 30px;
+  }
+  .user-info {
+    padding: 0 15px 15px 15px;
+  }
+  .user-data {
+  }
+  .user-info {
+    h4 {
+      margin-bottom: 5px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    .btn {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .btn:hover {
+      text-decoration: underline;
+    }
+  }
+  .user-img {
+    min-height: 200px;
+    background-size: cover;
+    background-position: center center;
+    max-height: 200px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
+  .user-img.contain {
+    margin: 0 10%;
+    background-size: contain;
+  }
+}
+
+/*Images on forms*/
+.profileimg-input {
+  position: relative;
+  width: 160px;
+  .deleteimg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+  }
+  .imginfo {
+    display: none;
+  }
+}
+.multiimg-input {
+  position: relative;
+  width: 160px;
+  float: left;
+  margin: 0 15px 15px 0;
+  .deleteimg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+  }
+  hr,
+  .imginfo {
+    display: none;
+  }
+}
+.portimg-input {
+  margin: 15px 15px 0px 0;
+  hr,
+  .title {
+    display: none;
+  }
+  img {
+    margin-bottom: 0px;
+  }
+}
+.multiimg-wrap {
+  display: inline-block;
+  width: 100%;
+}
+.wrapper:after {
+  content: ' ';
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+  display: none;
+}
+.wrapper:before {
+  content: '';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  width: 70px;
+  height: 70px;
+  z-index: 222;
+  display: block;
+  margin: -35px 0px 0 0px;
+  display: none;
+}
+body.ajaxloading {
+  .wrapper:before,
+  .wrapper:after {
+    display: block;
+  }
+}
+body.ajaxloaded {
+  .wrapper:before,
+  .wrapper:after {
+    display: none;
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*Album Manage*/
+.manage-wrap {
+  margin-right: -40px;
+  .profileimg-input {
+    width: 100%;
+    display: inline-block;
+    margin: 0 0 15px 0;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    padding-right: 40px;
+    .file-img {
+      float: left;
+      padding: 10px 20px 0 0;
+      width: 30%;
+      img {
+        margin: 0px;
+      }
+    }
+    .file-info {
+      float: left;
+      padding: 10px 0px 0 0px;
+      width: 70%;
+    }
+    .file-title {
+      width: 100%;
+      input {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+    .file-desc {
+      width: 100%;
+      textarea {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 15px;
+      }
+    }
+    .file-cover {
+      width: 100%;
+      min-height: 40px;
+      label {
+        cursor: pointer;
+      }
+    }
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: #eeeeee;
+      float: left;
+      margin-top: 15px;
+    }
+  }
+}
+
+/*User Connections - Friends & Followers*/
+.select-user {
+  font-size: 17px;
+}
+.user-select-all {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.user-connect {
+  $imgsize: 36px;
+  .user-row {
+    vertical-align: top;
+    padding: 10px 0 0px 0;
+    margin: 0 0px 0px 0;
+    display: inline-block;
+    width: 100%;
+    &:hover {
+      background-color: #eeeeee;
+    }
+  }
+  .divider {
+    margin: 10px 0px 0px 0;
+    float: left;
+    width: 100%;
+    height: 1px;
+    background-color: #eeeeee;
+  }
+  .user-col {
+    float: left;
+  }
+  .user-check {
+    width: 20px;
+    margin: 0 10px;
+  }
+  .user-img {
+    img {
+      margin: 0px;
+      width: $imgsize;
+      height: $imgsize;
+    }
+    width: 60px;
+    min-width: 60px;
+  }
+  .user-name {
+    font-size: 17px;
+    width: 135px;
+    line-height: $imgsize;
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+  .user-actions {
+    width: calc(100% - 240px);
+    line-height: $imgsize;
+    min-width: 40%;
+    .btn {
+      white-space: nowrap;
+    }
+  }
+  .button2 {
+    margin-right: 0px;
+  }
+  &.user-follower {
+    .user-actions {
+      width: calc(100% - 280px);
+      min-width: 20%;
+    }
+  }
+}

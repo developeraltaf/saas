@@ -1,0 +1,26 @@
+/*------------------------------------------
+    Dashboard
+------------------------------------------*/
+body .main-panel .load-dashboard {
+  .content {
+    min-height: auto;
+    padding: 0px;
+  }
+  .page-title {
+    margin-top: 0px;
+    h1 {
+      font-size: 25px;
+    }
+  }
+  .viewall-module {
+    float: right;
+    display: inline-block;
+    height: 100%;
+    /* position: absolute; */
+    /* right: 30px; */
+    /* top: 30px; */
+    margin-right: 0px;
+    white-space: nowrap;
+    line-height: 75px;
+  }
+}
